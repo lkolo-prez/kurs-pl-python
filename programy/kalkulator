@@ -1,0 +1,45 @@
+# Kalkulator w języku Python
+
+# Funkcje dla poszczególnych operacji matematycznych
+
+def dodaj(x, y):
+    """Funkcja dodająca dwie liczby"""
+    return x + y
+
+def odejmij(x, y):
+    """Funkcja odejmująca jedną liczbę od drugiej"""
+    return x - y
+
+def pomnoz(x, y):
+    """Funkcja mnożąca dwie liczby"""
+    return x * y
+
+def podziel(x, y):
+    """Funkcja dzieląca jedną liczbę przez drugą"""
+    return x / y
+
+# Menu kalkulatora z dostępnymi operacjami
+print("Wybierz operację:")
+print("1. Dodawanie")
+print("2. Odejmowanie")
+print("3. Mnożenie")
+print("4. Dzielenie")
+
+# Pobranie wyboru użytkownika
+wybor = input("Wprowadź numer operacji (1/2/3/4): ")
+
+# Pobranie liczb od użytkownika
+liczba1 = float(input("Wprowadź pierwszą liczbę: "))
+liczba2 = float(input("Wprowadź drugą liczbę: "))
+
+# Wykonanie odpowiedniej operacji i wyświetlenie wyniku
+if wybor == '1':
+    print("Wynik dodawania: ", dodaj(liczba1, liczba2))
+elif wybor == '2':
+    print("Wynik odejmowania: ", odejmij(liczba1, liczba2))
+elif wybor == '3':
+    print("Wynik mnożenia: ", pomnoz(liczba1, liczba2))
+elif wybor == '4':
+    print("Wynik dzielenia: ", podziel(liczba1, liczba2))
+else:
+    print("Niepoprawny wybór")
